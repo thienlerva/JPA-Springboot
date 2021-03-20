@@ -1,0 +1,24 @@
+server.servlet.context-path: /joinquery
+
+spring:
+  application:
+    name: JoinQuery
+
+
+  datasource:
+    url: jdbc:h2:mem:joinquery;Mode=Oracle
+    platform: h2
+    enable: true
+    path: /h2-console
+
+#to access h2 localhost:8080/joinquery/h2-console
+  #to access swagger ui: localhost:8080/joinquery/swagger-ui.html
+  jpa:
+    show-sql: true
+    hibernate:
+    ddl-auto: update
+
+mybatis.type-aliases-package: com.jpmc.JoinQueryApp.model
+mybatis:
+  mapper-locations:
+  - classpath:/mybatis/*.xml

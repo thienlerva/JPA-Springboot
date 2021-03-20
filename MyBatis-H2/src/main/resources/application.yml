@@ -1,0 +1,26 @@
+server:
+  port: 9090
+
+path.name: /
+
+spring:
+  application:
+    name: MyBatisH2
+
+  datasource:
+    url: jdbc:h2:mem:myBatisH2;DB_CLOSE_DELAY=-1
+    platform: h2
+    enable: true
+    path: /h2-console
+
+  #access swagger-ui: localhost:9090/swagger-ui/index.html
+  #access h2: localhost:9090/h2-console
+  #url: jdbc:h2:mem:productapi
+  #add devtool dependency to pom
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+mybatis.type-aliases-package: com.code.MyBatisH2.model
+mybatis.mapper-locations: mybatis/*.xml

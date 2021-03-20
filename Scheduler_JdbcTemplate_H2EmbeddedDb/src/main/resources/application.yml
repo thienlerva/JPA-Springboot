@@ -1,0 +1,31 @@
+server.servlet.context-path: /scheduler
+server.port: 8000
+
+spring:
+  profile.active: local
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/Scheduler?serverTimezone=UTC
+    username: root
+    password: password
+    jpa:
+      show-sql: true
+      hibernate:
+      ddl-auto: update
+
+spring.mail.host: smtp.gmail.com
+spring.mail.port: 587
+spring.mail.username: thienle112014@gmail.com
+spring.mail.password: myhome1049
+
+#spring.mail.host: smtp.mailtrap.io
+#spring.mail.port: 2525
+#spring.mail.username: fec2cd2e303c27
+#spring.mail.password: d2c5c1042dc35f
+
+
+#  mail.properties.mail.smtp.auth: true
+#  mail.properties.mail.smtp.starttls.enable: true
+
+mybatis.type-aliases-package: com.thien.Scheduler.model
+mybatis.mapper-locations: mybatis/*.xml

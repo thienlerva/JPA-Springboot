@@ -1,0 +1,31 @@
+server.servlet.context-path: /swagger
+server.port: 8000
+
+spring:
+  profile.active: local
+  autoconfigure.exclude:
+  - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  - org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration
+
+swagger:
+  datasource:
+      url: jdbc:mysql://localhost:3306/swagger?serverTimezone=UTC
+      username: root
+      password: password
+  jpa:
+        show-sql: true
+        hibernate:
+        ddl-auto: update
+        properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+
+#mybatis.type-aliases-package: com.jmpc.swagger.model
+#mybatis.mapper-locations: mybatis/*.xml
+
+#swagger.mybatis:
+#  mapper-locations: mybatis/StudentMapper.xml
+
+#configuration:
+#local-cache-scope: STATEMENT
+
+#to access swagger ui: localhost:8000/swagger/swagger-ui.html

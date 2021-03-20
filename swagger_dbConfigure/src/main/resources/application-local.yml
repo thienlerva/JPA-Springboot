@@ -1,0 +1,16 @@
+spring.jackson.serialization:
+  INDENT_OUTPUT: true
+
+
+
+#swagger:
+#  datasource:
+#      url: jdbc:mysql://localhost:3306/swagger?serverTimezone=UTC
+#      username: root
+#      password: password
+#  jpa:
+#        show-sql: true
+#        hibernate:
+#        ddl-auto: create
+#        properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+

@@ -1,0 +1,19 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jpmc.mybatisExample.mapper.InstructorMapper">
+    <resultMap id="InstructorResultMap" type="Instructor">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="email" property="email" />
+    </resultMap>
+    <select id="findAllInstructors" resultMap="InstructorResultMap">
+        select id, name, email from instructor
+    </select>
+    <select id="findInstructorById" resultMap="InstructorResultMap">
+        select id, name, email from instructor WHERE id=#{id}
+    </select>
+    <insert id="insertInstructor" parameterType="instructor" useGeneratedKeys="true" keyProperty="id">
+        insert into instructor(name,email) values(#{name},#{email})
+    </insert>
+</mapper>

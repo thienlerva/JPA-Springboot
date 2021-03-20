@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.swagger.mapper.StudentMapper" >
+    <!--<cache />-->
+    <resultMap id="baseResultMap" type="com.swagger.model.Student" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="student_name" property="name" jdbcType="VARCHAR" />
+        <result column="phone" property="phone" jdbcType="VARCHAR" />
+        <result column="email" property="email" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id="findAll" resultMap="baseResultMap">
+        select
+        <!--<choose>-->
+            <!--<when test="dbQueryConfig.platform == 'MySql'">-->
+                <!--id, name as student_name ,phone,email-->
+            <!--</when>-->
+            <!--<when test="dbQueryConfig.platform == 'H2'">-->
+            <!--id, name as student_name ,phone,email-->
+            <!--</when>-->
+            <!--<otherwise>-->
+                <!--UNSUPPORTED &#45;&#45; to force exception in SQL QUERY-->
+            <!--</otherwise>-->
+        <!--</choose>-->
+        <!--from student;-->
+        id, name as student_name, phone, email from student;
+    </select>
+
+    <select id="findById" resultMap="baseResultMap">
+        select * from student WHERE id=#{id}
+    </select>
+    <insert id="insert" parameterType="student" useGeneratedKeys="true" keyProperty="id">
+        insert into student(id, name,phone,email) values(#{id},#{name},#{phone},#{email})
+    </insert>
+</mapper>
