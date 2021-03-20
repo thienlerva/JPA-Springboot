@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;database.properties&apos; to &apos;triviatownes/src/main/resources&apos;&#x0A;- Original project: &apos;ERS&apos;&#x0A;- Destination element: &apos;triviatownes/src/main/resources&apos;&#x0A;- Original element: &apos;database.properties&apos;" description="Copy file" destination="=triviatownes/src\/main\/resources" element1="src/main/resources/database.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1543808271838" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/TriviaServlets at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="TriviaServlets at localhost" name="TriviaServlets at localhost" runtime-id="Trivia" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="7">
+    <list key="modules" value0="triviatownes::org.eclipse.jst.jee.server:triviatownes::jst.web::2.5"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/SimpleWebProject at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="SimpleWebProject at localhost" name="SimpleWebProject at localhost" runtime-id="SimpleWebProject" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2"/>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/HelloServlets at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="HelloServlets at localhost" name="HelloServlets at localhost" runtime-id="HelloServlets" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="1">
+    <list key="modules" value0="hello-servlets::org.eclipse.jst.jee.server:hello-servlets::jst.web::2.5"/>
+  </server>
+</servers>

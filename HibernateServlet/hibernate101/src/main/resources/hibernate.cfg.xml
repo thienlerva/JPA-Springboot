@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		
+	<!-- Database details -->
+		<property name="driver_class">oracle.jdbc.driver.OracleDriver</property>
+
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@oct22-java-demo.craonmf7k4ob.us-east-1.rds.amazonaws.com:1521/ORCL</property>
+
+		<property name="hibernate.connection.username">oct22_java_demo</property>
+		<property name="hibernate.connection.password">Myhome1049</property>
+		
+		<!-- Create/update /ect schema 
+		create: create the schema, the data previously present (if there) in the schema is lost
+		update: udpate the schema with the given values
+		validate: validate the schema. It makes no change in the DB.
+		create - drop: -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<!-- show HQL commands as they're carried out in the console -->
+		<property name="show_sql">true</property>
+		
+		<!-- classes to be configured via annotation -->
+		<mapping class="com.revature.models.User"/>
+		<mapping class="com.revature.models.Post"/>
+
+	</session-factory>
+</hibernate-configuration>

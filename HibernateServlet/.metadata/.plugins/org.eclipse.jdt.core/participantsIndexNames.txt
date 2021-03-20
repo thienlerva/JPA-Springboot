@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+/Users/thienle/Documents/AJAX_Project_Github/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1796229474.index
+/SimpleWebProject/src/main/resources

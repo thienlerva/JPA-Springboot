@@ -1,0 +1,26 @@
+package com.revature.practice;
+
+public class BallBouce {
+	
+	public static void main(String[] args) {
+		System.out.println(bouncingBall(3, 0.66, 1.5));
+	}
+	
+	public static int bouncingBall(double h, double bounce, double window) {
+	    // your code
+      
+      int count = 0;
+      while(h>window) {
+        h= h*bounce;
+        count++;
+      
+      }
+      if(count==0) {
+        return -1;
+      } else {
+      
+        return count;
+      }
+	}
+
+}

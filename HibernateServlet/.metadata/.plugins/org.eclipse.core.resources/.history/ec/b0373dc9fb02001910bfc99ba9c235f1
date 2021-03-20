@@ -1,0 +1,26 @@
+package com.revature.practice;
+
+public class MinMaxNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public String minMaxString(String number) {
+		
+		String[] arrayString = number.split(",");
+		
+		int[] arrayNumber = new int[arrayString.length];
+		
+		for(int i = 0; i < arrayString.length; i++) {
+			arrayNumber[i] = Integer.parseInt(arrayString[i]);
+		}
+		
+		int max = arrayNumber[0];
+		
+		
+		return "";
+	}
+
+}

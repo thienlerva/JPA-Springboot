@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/Users/thienle/my_git_repos/1810-oct22/Hibernate/examples/hibernate101_Latest"/>
+		<item value="/Users/thienle/my_git_repos/1810-oct22/Hibernate/examples/hibernate101/src"/>
+		<item value="/Users/thienle/Documents/Project2GroupProject/triviatownes"/>
+		<item value="/Users/thienle/Documents/JavaFundamentals/HomeWork1"/>
+		<item value="/Users/thienle/Documents/AJAX_Project_Github/Project1"/>
+		<item value="/Users/thienle/Documents/JavaFundamentals/BankApp"/>
+	</list>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="395" key="DIALOG_X_ORIGIN"/>
+		<item value="203" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

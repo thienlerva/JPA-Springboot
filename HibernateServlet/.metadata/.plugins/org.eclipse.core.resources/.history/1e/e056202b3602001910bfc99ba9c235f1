@@ -1,0 +1,29 @@
+package com.revature.practice;
+
+import java.util.Arrays;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class RemoveDuplicateElementArray {
+	
+	
+	public static void main(String[] args) {
+		
+		RemoveDuplicateElementArray re = new RemoveDuplicateElementArray();
+		int[] array = {5,2,5,1,7,};
+		
+		System.out.println(Arrays.toString(re.removeElement(array)));
+	}
+	
+	public Integer[] removeElement(int[] arr) {
+		
+		
+		Set<Integer> set = new TreeSet<>();
+		
+		
+		Integer[] result = set.toArray(new Integer[0]);
+		return result;
+		
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.revature.practice;
+
+public class MinMaxNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(minMaxString("3,1,5,0,2"));
+
+	}
+	
+	public static String minMaxString(String number) {
+		
+		String[] arrayString = number.split(",");
+		
+		int[] arrayNumber = new int[arrayString.length];
+		
+		for(int i = 0; i < arrayString.length; i++) {
+			arrayNumber[i] = Integer.parseInt(arrayString[i]);
+		}
+		
+		int min = arrayNumber[0];
+		int max=0;
+		int temp;
+		
+		for(int i = 1; i < arrayNumber.length; i++) {
+			max = arrayNumber[i];
+			if(min > max) {
+				temp = max;
+				max = min;
+				
+				min = temp;
+			}
+		}
+		
+		return "Min: " + min + ", max: " + max;
+	}
+
+}

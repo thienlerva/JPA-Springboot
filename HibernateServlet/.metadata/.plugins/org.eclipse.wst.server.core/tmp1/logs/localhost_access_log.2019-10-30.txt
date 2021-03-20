@@ -1,0 +1,10 @@
+127.0.0.1 - - [30/Oct/2019:21:25:59 -0400] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [30/Oct/2019:21:26:06 -0400] "GET /hello-servlets/home HTTP/1.1" 404 1097
+0:0:0:0:0:0:0:1 - - [30/Oct/2019:21:26:06 -0400] "GET /hello-servlets/home HTTP/1.1" 404 1097
+0:0:0:0:0:0:0:1 - - [30/Oct/2019:21:26:07 -0400] "GET /hello-servlets/home HTTP/1.1" 404 1097
+0:0:0:0:0:0:0:1 - - [30/Oct/2019:21:26:16 -0400] "GET /hello-servlets/httpInfo HTTP/1.1" 500 3708
+0:0:0:0:0:0:0:1 - - [30/Oct/2019:21:26:49 -0400] "GET /hello-servlets/test HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [30/Oct/2019:21:28:54 -0400] "POST /hello-servlets/login HTTP/1.1" 404 1098
+0:0:0:0:0:0:0:1 - - [30/Oct/2019:21:29:02 -0400] "POST /hello-servlets/login HTTP/1.1" 404 1098
+0:0:0:0:0:0:0:1 - - [30/Oct/2019:21:29:26 -0400] "GET /hello-servlets/users HTTP/1.1" 404 1098
+0:0:0:0:0:0:0:1 - - [30/Oct/2019:21:29:32 -0400] "GET /hello-servlets/logout HTTP/1.1" 404 1099
